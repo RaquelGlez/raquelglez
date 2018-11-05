@@ -1,32 +1,46 @@
 .App {
+  animation: movimiento 20s infinite linear alternate;
+  background-image: url(../src/components/Images/macro.jpg);
+  background-size:100%;
+  position: relative;
   text-align: center;
+  width: 100%;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@keyframes movimiento {
+  from{
+    background-position: bottom left;
+  } to {
+    background-position: top right;
   }
 }
+
+
+.capa-gradiente {
+  width: 100%;
+  position: absolute;
+  background: -webkit-linear-gradient(to right, red , blue);
+  /* background-image: linear-gradient(left, #6F758C,#B7BAC5); */
+  opacity: 0.5;
+}
+
+.contenido-details{
+  width: 100%;
+  position: relative;
+}
+
+.Contenido {
+  width: 100%;
+  position: relative;
+
+
+  /* background-image: url(../src/components/Images/macro.jpg);
+  background-position: center;
+  opacity: 1.0;
+  
+  background-size:130%;
+  background-repeat: repeat; */
+}
+
+

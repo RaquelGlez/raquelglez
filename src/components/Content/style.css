@@ -1,0 +1,147 @@
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Dosis', sans-serif;
+
+font-family: 'Dosis', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+/*Comun*/
+.content-title {
+    font-family: 'Dosis', sans-serif;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+/*comun*/
+
+/*Inicia Menu*/
+.menu {
+    height: 100%;
+    width: 200px;
+    display: block;
+    position: fixed;
+    /* color: #DBD9E3; */
+
+    
+}
+
+a {
+    /* transition: 0.2s color linear; */
+    /* color:rgb(248, 222, 222); */
+    overflow: hidden;
+    
+}
+
+a:active, a:focus, a:hover, a:link {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer; 
+}
+
+.menu-link {
+    font-family: 'Dosis', sans-serif;
+    font-weight: regular;
+    color: black;
+    width: 100%;
+    font-size: 1.5em;
+    
+    
+}
+
+.menu-name {
+    font-size: 1em;
+}
+/*Termina Menu*/
+
+/* Inician estilos de seccion aboutme*/
+.about {
+    /* background-image: linear-gradient(#575E79,#6F758C); */
+    
+    /* background-color:#575E79; */
+    /* color: #DBD9E3; */
+    color: #313545;
+    border-radius: 20px 5px 0px 0px;
+    -moz-border-radius: 20px 5px 0px 0px;
+    -webkit-border-radius: 20px 5px 0px 0px;
+
+}
+
+.image-aboutme{
+    font-family: 'Dosis', sans-serif;    
+}
+
+h2 {
+    font-size: 3em;
+}
+
+/* p {
+    margin-bottom: auto !important;
+} */
+
+.content-aboutme {
+    font-family: 'Open Sans', sans-serif; 
+    text-align: right; 
+    font-size: 18px; 
+    font-style: oblique;
+}
+/*Terminan estilos de seccion aboutme*/
+
+/*Inician estilos de sección work*/
+.work {
+    /* background-color:#6F758C; */
+    /* background-image: linear-gradient(#6F758C,#878C9F); */
+    /* color: #DBD9E3; */
+    color: #313545;
+}
+
+
+
+/*Terminan estilos de sección work*/
+
+/*Inician estilos de sección skills*/
+.skills {
+    /* background-color:#878C9F; */
+    /* background-image: linear-gradient(#878C9F,#9FA3B2); */
+    /* color: #DBD9E3; */
+    color: #313545;
+}
+
+/*Terminan estilos de sección skills*/
+
+/*Inician estilos de sección contact*/
+.contact {
+    /* background-color:#9FA3B2; */
+    /* background-image: linear-gradient(#9FA3B2,#B7BAC5); */
+    color: #313545;
+    /* color: #DBD9E3; */
+    border-radius: 1px 0px 5px 20px;
+    -moz-border-radius: 1px 0px 5px 20px;
+    -webkit-border-radius: 1px 0px 5px 20px;
+}
+
+
+.content-contact {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.contact-icons {
+    display: inline-block;
+}
+
+.contact-link {
+    font-size: 2em;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    color:#DBD9E3;
+
+}
+
+/*Terminan estilos de sección contact*/
+
+
+
