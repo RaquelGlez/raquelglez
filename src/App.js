@@ -13,6 +13,7 @@ class App extends Component {
           <div className="contenido-details">
             <div className="contenido"><Content /></div>
           </div>
+        
       </div>
     );
   }

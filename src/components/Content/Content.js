@@ -34,9 +34,9 @@ const Content = (props) => {
       </div>
       <div className="col-9">
         <div className="about mt-5"><About /></div>
-        <div className="work"><Work /></div>
-        <div className="skills"><Skills /></div>
-        <div className="contact mb-5"><Contact /></div>
+        <div className="work my-5"><Work /></div>
+        <div className="skills my-5"><Skills /></div>
+        <div className="contact my-5"><Contact /></div>
       </div>
     </div>
 

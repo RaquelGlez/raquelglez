@@ -8,11 +8,15 @@ font-family: 'Raleway', sans-serif;
 */
 /*Comun*/
 .content-title {
-    font-family: 'Dosis', sans-serif;
+   font-family: 'McLaren', cursive;
+   /* font-family: 'Flamenco', sans-serif; */
+   color: #9F1B12;
+
 }
 
 h3 {
-    font-size: 2.5em;
+    font-size: 3.5em;
+    font-weight: bold;
 }
 
 /*comun*/
@@ -23,6 +27,9 @@ h3 {
     width: 200px;
     display: block;
     position: fixed;
+    color: #101C24;
+    /*#1C0403;*/
+    /*#B19C22;*/
     /* color: #DBD9E3; */
 
     
@@ -42,11 +49,15 @@ a:active, a:focus, a:hover, a:link {
 }
 
 .menu-link {
-    font-family: 'Dosis', sans-serif;
-    font-weight: regular;
-    color: black;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight: bold !important;
+    /* color: black; */
+    color: #101C24;
+    /*#C7179E;*/
+    /*#9A440C, #5717C7;*/
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.4em;
     
     
 }
@@ -61,8 +72,10 @@ a:active, a:focus, a:hover, a:link {
     /* background-image: linear-gradient(#575E79,#6F758C); */
     
     /* background-color:#575E79; */
-    /* color: #DBD9E3; */
-    color: #313545;
+    color: #C71D17;
+    /*#D0221C;
+    #E2DBC1;
+     color: #313545; */
     border-radius: 20px 5px 0px 0px;
     -moz-border-radius: 20px 5px 0px 0px;
     -webkit-border-radius: 20px 5px 0px 0px;
@@ -70,11 +83,40 @@ a:active, a:focus, a:hover, a:link {
 }
 
 .image-aboutme{
-    font-family: 'Dosis', sans-serif;    
+    font-family: 'Amaranth', sans-serif;
+    /*'Flamenco', cursive;*/
+    /* 'Dosis', sans-serif;   */
+ 
 }
 
 h2 {
-    font-size: 3em;
+    font-weight: bolder;
+    font-size: 5em;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+
+    
+    /*0px 0px 6px #FF4031;*/
+    
+    /*rgba(255,255,255,0.7);*/
+ 
+    /*3px 4px 7px rgba(81,67,21,0.8);*/
+    /*4px 3px 0px #7A7A7A;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);  */
+}
+
+
+h5.title {
+    font-weight: light;
+    font-style: italic;
+    color: #C79217;
+    font-size: 2.5em;
+    text-shadow: 0px 0px 6px #550C09;
+    
+    /*0 -4px rgba(81,67,21,0.8);*/
+     
+    /* text-shadow: 0 4px rgba(81,67,21,0.8); */
 }
 
 /* p {
@@ -82,19 +124,29 @@ h2 {
 } */
 
 .content-aboutme {
-    font-family: 'Open Sans', sans-serif; 
-    text-align: right; 
-    font-size: 18px; 
-    font-style: oblique;
+    font-family: 'Titillium Web', sans-serif;
+    /*'Asap', sans-serif;*/
+    text-align: center; 
+    font-size: 25px;
+    font-weight: light; 
+    
+    color: #F7DEDD;
+    /*#ECCBA8;*/
+    /*#E4D7C2;*/
+    height: 40%;   
 }
 /*Terminan estilos de seccion aboutme*/
 
 /*Inician estilos de sección work*/
-.work {
+.content-work {
     /* background-color:#6F758C; */
     /* background-image: linear-gradient(#6F758C,#878C9F); */
     /* color: #DBD9E3; */
-    color: #313545;
+    
+    color: #9F1B12;
+    /*#C8103C;*/
+    /*#313545;*/
+    
 }
 
 
@@ -106,8 +158,28 @@ h2 {
     /* background-color:#878C9F; */
     /* background-image: linear-gradient(#878C9F,#9FA3B2); */
     /* color: #DBD9E3; */
-    color: #313545;
+    color: #9F1B12;
 }
+
+.card-skill {
+    background: none;
+    border: none;
+    padding: 0px 40px;
+}
+
+.name-skill {
+    color: #C79217;
+    font-size: 45px;
+}
+
+.list-skill {
+    color: #F7DEDD;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    padding: 0px 80px;
+    list-style: none;
+}
+
 
 /*Terminan estilos de sección skills*/
 
@@ -115,7 +187,7 @@ h2 {
 .contact {
     /* background-color:#9FA3B2; */
     /* background-image: linear-gradient(#9FA3B2,#B7BAC5); */
-    color: #313545;
+    color: #9F1B12;
     /* color: #DBD9E3; */
     border-radius: 1px 0px 5px 20px;
     -moz-border-radius: 1px 0px 5px 20px;
@@ -124,7 +196,9 @@ h2 {
 
 
 .content-contact {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Titillium Web', sans-serif;
+    color: #F7DEDD;
+    font-size: 22px;
 }
 
 .contact-icons {
@@ -137,7 +211,8 @@ h2 {
     text-decoration: none;
     background-color: transparent;
     cursor: pointer;
-    color:#DBD9E3;
+    color: #C79217;
+    /*color:#DBD9E3;*/
 
 }
 

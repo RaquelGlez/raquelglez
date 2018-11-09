@@ -10,7 +10,7 @@ const Contact = (props) => {
         <section className="content-title">
             <h3>Contacto</h3>  
         </section>
-        <section className="content-contact">
+        <section className="content-contact pt-4">
             <p>Estemos en contacto, igual me gustaria saber de ti</p>
             <div className="contact-icons">
               <a className="contact-link" href="mailto:gonzalez.c.raquel@gmail.com">
