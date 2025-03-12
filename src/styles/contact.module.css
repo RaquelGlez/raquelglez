@@ -1,5 +1,7 @@
 .containerContact {
-  min-height: 80vh;
+  height: 100vh;
+  height: 100%;
+  padding: 5rem 0;
   background-color: var(--greenD3);
 }
 
@@ -83,7 +85,7 @@
   font-size: 1rem;
   letter-spacing: 1.1px;
   opacity: 0;
-  transition: opacity 0.2s linear;
+  /*  transition: opacity 0.2s linear; */
   transition: opacity 0.3s ease, display 0.3s ease allow-discrete;
 }
 
@@ -101,6 +103,7 @@
 .button_form {
   border: 1px solid var(--greenD1);
   color: var(--greenD1);
+
   border-radius: 0.5rem;
   cursor: pointer;
   font-weight: 400;
@@ -111,4 +114,23 @@
   line-height: 100%;
   padding: 1rem 3rem;
   text-transform: uppercase;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background-color: var(--greenD2);
+    border-color: var(--greenD2);
+    color: var(--greenC3);
+  }
+}
+
+.contactLink {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--greenD2);
+  transition: all 0.15s linear;
+
+  &:hover {
+    color: var(--greenD1);
+  }
 }

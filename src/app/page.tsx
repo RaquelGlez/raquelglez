@@ -17,8 +17,6 @@ export default function Home() {
         <br />
         <br />
         <Contact />
-        <br />
-        <br />
       </main>
     </div>
   );
