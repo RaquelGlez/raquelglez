@@ -1,10 +1,13 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import styles from "../../styles/contact.module.css";
 import { contactSchema } from "@/utils/validations/contactSchema";
 import { sendEmail } from "@/utils/resend";
+import ContactModal from "./ContactModal";
+import useModal from "@/utils/hooks/useModal";
 
 type Inputs = {
   name: string;
@@ -14,6 +17,9 @@ type Inputs = {
 };
 
 const ContactForm = () => {
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [successEmail, setSuccessEmail] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -31,13 +37,26 @@ const ContactForm = () => {
     },
   });
 
+  const { ref, onOpen, onClose, isOpen } = useModal();
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    sendEmail(data);
+    sendEmail(data)
+      .then((res) => {
+        setSuccessEmail(true);
+        onOpen();
+      })
+      .catch((err) => {
+        setErrorEmail(true);
+        onOpen();
+      });
   };
 
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset({ name: "", email: "", subject: "", message: "" });
+
+      setSuccessEmail(false);
+      setErrorEmail(false);
     }
   }, [formState, reset]);
 
@@ -159,6 +178,45 @@ const ContactForm = () => {
           </button>
         </div>
       </form>
+      <ContactModal ref={ref} onClose={onClose} isOpen={isOpen}>
+        {successEmail && !errorEmail ? (
+          <div>
+            <Image
+              src="/img/rama.png"
+              alt="icono de error"
+              width={75}
+              height={100}
+              className="mx-auto mb-4"
+            />
+
+            <h5 className="font-bold text-center text-2xl">
+              ¡Gracias por tu mensaje!
+            </h5>
+            <p className="pt-7 pb-8 text-xl text-center">
+              Pronto me pondre en contacto contigo
+            </p>
+          </div>
+        ) : null}
+        {!successEmail && errorEmail ? (
+          <>
+            <Image
+              src="/img/aloe.png"
+              alt="icono de error"
+              width={100}
+              height={50}
+              className="mx-auto mb-6"
+            />
+            <h5
+              className={`font-bold text-center text-2xl ${styles.modal_msgError}`}
+            >
+              ¡Ha ocurrido un error!
+            </h5>
+            <p className="pt-8 pb-6 text-xl text-center">
+              Por favor intentalo nuevamente
+            </p>
+          </>
+        ) : null}
+      </ContactModal>
     </div>
   );
 };
