@@ -1,4 +1,5 @@
 import Contact from "@/components/contact/Contact";
+import Work from "@/components/work/Work";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,10 @@ export default function Home() {
         <br />
         <br />
       </main>
+      <br />
+      <br />
+      <div className="w-full h-1 bg-slate-600"></div>
+      <Work />
       <Contact />
     </div>
   );

@@ -3,7 +3,6 @@ import Link from "next/link";
 import ContactForm from "./ContactForm";
 import styles from "../../styles/contact.module.css";
 import { icons } from "@/utils/helperData";
-import ContactModal from "./ContactModal";
 
 const Contact = () => {
   return (

@@ -1,3 +1,77 @@
+import trt_ws from "../../public/img/trt_ws.png";
+import trt_ws1 from "../../public/img/trt_ws2.png";
+import trt_ws3 from "../../public/img/trt_ws3.png";
+import trt_ws4 from "../../public/img/trt_ws4.png";
+import cme from "../../public/img/cme.png";
+import cme1 from "../../public/img/cme1.png";
+import cme4 from "../../public/img/cme4.png";
+import cme6 from "../../public/img/cme6.png";
+import t_w from "../../public/img/t_w.png";
+import t_w2 from "../../public/img/t_w2.png";
+import t_w3 from "../../public/img/t_w3.png";
+import notes_app from "../../public/img/notes_app.png";
+import notes_app2 from "../../public/img/notes_app2.png";
+import notes_app3 from "../../public/img/notes_app3.png";
+
+export const projects = [
+  {
+    id: 1,
+    img: trt_ws,
+    images: [trt_ws1, trt_ws3, trt_ws4],
+    title: "Toroto",
+    url_code: "",
+    url_page: "https://toroto.com",
+    skills: "NEXTJS, SASS, MAPBOX, GraphQL, GIT, DOCKER",
+    description:
+      "Esta es la página oficial de Toroto. Lidere la implementación del rediseño, trabajando en la arquitectura del frontend incluyendo el desarrollo de componentes, implementación  de servicios, el idioma, responsive; así como el posterior mantenimiento.",
+  },
+  {
+    id: 2,
+    img: cme,
+    images: [cme1, cme4, cme6],
+    title: "Panel de monitoreo de carbono",
+    url_code: "",
+    url_page: "",
+    skills: "NEXTJS, SASS, CODA, GIT",
+    description:
+      "Este es un proyecto desarrolado para Toroto. Consiste en un panel para gestionar las cuentas de clientes de Toroto interesadas en medir sus emisiones de CO2 en tres ámbitos, según su interes. El panel coadyuva a la administración de la recepción, manejo y respuesta a formularios y documentos asociados a los procesos de medición.",
+  },
+  {
+    id: 3,
+    img: t_w,
+    images: [t_w, t_w2, t_w3],
+    title: "the.weather",
+    url_code: "https://github.com/RaquelGlez/the-weather-pwa",
+    url_page: "https://raquelglez.github.io/the-weather-pwa/",
+    skills: "REACT, SASS, ...",
+    description:
+      "the.weather es una pwa, muestra el clima de una ciudad, incluyendo detalles como la humedad, nubosidad y viento.",
+  },
+  {
+    id: 4,
+    img: notes_app,
+    images: [notes_app, notes_app2, notes_app3],
+    title: "NotesApp",
+    url_code: "https://github.com/RaquelGlez/NotesApp",
+    url_page: "https://raquelglez.github.io/NotesApp/#/NotesApp/auth/login",
+    skills: "REACT, SASS, FIREBASE, BOOTSTRAP, ...",
+    description:
+      "NotesApp es un proyecto personal. Es una página web, en la que se pueden gestionar notas. Permite crear, editar y/o borrar notas.",
+  },
+];
+
+export const about = {
+  name: "Raquel González",
+  //img: photograph,
+  position: "Frontend Developer",
+  aboutme:
+    "Me gusta aprender cosas nuevas constantemente. Busco aplicar la tecnología, mi experiencia y vivencias para idear, crear o mejorar productos y servicios que coadyuven a mejorar la calidad de vida de las personas y el entorno.",
+  descriptionSkills:
+    "Me he desempeñado como frontend, empleando algunas tecnologías como:",
+  skills:
+    "HTML, CSS, JS, REACT, REACT NATIVE, SASS, NODE, FIREBASE, GIT, GITHUB, GITFLOW, SWIFT",
+};
+
 export const icons = {
   iconPage: (
     <svg
