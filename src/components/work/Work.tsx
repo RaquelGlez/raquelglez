@@ -17,15 +17,14 @@ const Work = () => {
   const [idActiveItem, setIdActiveItem] = useState("");
 
   return (
-    <div className={`overflow-hidden ${styles.containerWorks}`}>
-      <h2 className="font-semibold text-current md:mb-8 text-xl text-center">
+    <div className={`overflow-hidden ${styles.containerSectionWorks}`}>
+      <h2 className="font-semibold text-current md:mb-12 text-xl text-center">
         PROYECTOS
       </h2>
+
       <div
         className={`mx-auto  ${
-          activeItem
-            ? styles.containerProjects_details
-            : styles.containerProjects
+          activeItem ? styles.containerWorks_details : styles.containerWorks
         }`}
       >
         {projects.map((project) => (
@@ -41,20 +40,28 @@ const Work = () => {
           />
         ))}
       </div>
-      <div className={`w-4/5 mx-auto ${styles.containerMoreDetails}`}>
-        {projects.map((project) => (
-          <ProjectDetail
-            key={project.id + project.title}
-            itemId={project.id}
-            title={project.title}
-            description={project.description}
-            skills={project.skills}
-            url_code={project.url_code}
-            url_page={project.url_page}
-            images={project.images}
-            item={idActiveItem}
-          />
-        ))}
+      <div
+        className={`shadow rounded-2xl ${
+          activeItem ? styles.activeModal : styles.inactiveModal
+        }`}
+      >
+        <div className={`${styles.contentModal}`}>
+          {projects.map((project) => (
+            <ProjectDetail
+              key={project.id + project.title}
+              itemId={project.id}
+              title={project.title}
+              description={project.description}
+              skills={project.skills}
+              url_code={project.url_code}
+              url_page={project.url_page}
+              images={project.images}
+              item={idActiveItem}
+              setActiveItem={setActiveItem}
+              setIdActiveItem={setIdActiveItem}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

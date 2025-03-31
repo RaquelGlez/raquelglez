@@ -21,22 +21,18 @@ const Project: React.FC<PropsProject> = ({
   img,
   title,
 }) => {
-  console.log("item::", item);
-
   const clickItem = (item: string) => {
-    console.log("item-click::", item);
-
     setActiveItem(true);
     setIdActiveItem(item);
   };
 
   return (
     <div
-      className={` ${styles.containerWork}  ${
+      className={`${styles.containerProject}  ${
         activeItem
           ? idActiveItem === item
-            ? styles.containerWork_activeItem
-            : styles.containerWork_inactiveItem
+            ? styles.containerProject_activeItem
+            : styles.containerProject_inactiveItem
           : ""
       } `}
     >
@@ -46,7 +42,6 @@ const Project: React.FC<PropsProject> = ({
           alt="imagen de proyecto"
           width={500}
           height={500}
-          priority={true}
           className={`${styles.projectImage}`}
         />
 

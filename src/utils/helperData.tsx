@@ -34,7 +34,7 @@ export const projects = [
     url_page: "",
     skills: "NEXTJS, SASS, CODA, GIT",
     description:
-      "Este es un proyecto desarrolado para Toroto. Consiste en un panel para gestionar las cuentas de clientes de Toroto interesadas en medir sus emisiones de CO2 en tres ámbitos, según su interes. El panel coadyuva a la administración de la recepción, manejo y respuesta a formularios y documentos asociados a los procesos de medición.",
+      "Este es un proyecto desarrollado para Toroto. Consiste en un panel para gestionar las cuentas de clientes de Toroto interesadas en medir sus emisiones de CO2 en tres ámbitos, según su interes. El panel coadyuva a la administración de la recepción, manejo y respuesta a formularios y documentos asociados a los procesos de medición.",
   },
   {
     id: 3,
