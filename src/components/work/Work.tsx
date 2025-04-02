@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <div className={`overflow-hidden ${styles.containerSectionWorks}`}>
-      <h2 className="font-semibold text-current md:mb-12 text-xl text-center">
+      <h2 className="font-semibold text-current mb-12 text-xl text-center">
         PROYECTOS
       </h2>
 

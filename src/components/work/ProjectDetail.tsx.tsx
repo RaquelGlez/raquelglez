@@ -50,7 +50,7 @@ const ProjectDetail: React.FC<PropsProyectDetail> = ({
       </button>
       <h3 className="text-2xl text-center">{title}</h3>
       <div className={`flex  gap-y-14 ${styles.projectDetail_summary}`}>
-        <section className="w-1/3">
+        <section className={`${styles.projectDetail_summary_desc}`}>
           <p className="">{description}</p>
           <div className="my-6">
             <p className="text-black">Tecnologías usadas: </p>
@@ -80,7 +80,7 @@ const ProjectDetail: React.FC<PropsProyectDetail> = ({
             </div>
           )}
         </section>
-        <section className={`w-2/3  ${styles.projectDetail_gallery}`}>
+        <section className={`${styles.projectDetail_gallery}`}>
           {images.map((image, key) => (
             <div
               className={`${styles.projectDetail_gallery_item}`}
