@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import ContactForm from "./ContactForm";
 import styles from "../../styles/contact.module.css";
 import { icons } from "@/utils/helperData";
@@ -10,7 +9,7 @@ const Contact = () => {
       <div
         className={`flex justify-center items-center md:mx-auto flex-col md:w-9/12 w-full ${styles.mainContact}`}
       >
-        <h3 className="font-semibold text-current md:mb-8 text-xl ">
+        <h3 className="font-semibold text-current md:mb-8 text-3xl ">
           CONTACTO
         </h3>
         <div
@@ -30,22 +29,24 @@ const Contact = () => {
               desde este formulario.
             </p>
             <div className="flex flex-row mt-10 justify-evenly h-9/12">
-              <Link
+              <a
                 className={`${styles.contactLink}`}
                 target="_blank"
                 href="https://www.linkedin.com/in/raquelglezc"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn de raquel glez"
               >
                 {icons.iconLnk}
-              </Link>
-              <Link
+              </a>
+              <a
                 className={`${styles.contactLink}`}
                 target="_blank"
                 href="https://github.com/RaquelGlez"
                 rel="noopener noreferrer"
+                aria-label="Github de raquel glez"
               >
                 {icons.iconGh}
-              </Link>
+              </a>
             </div>
           </section>
           <ContactForm />

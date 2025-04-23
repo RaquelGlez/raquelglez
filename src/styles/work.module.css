@@ -115,7 +115,7 @@
   transition: 0.6s ease all;
 }
 .projectIntro button:hover {
-  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+  border-radius: 10%;
   background-color: var(--greenD2);
   color: var(--greenC3);
   font-weight: bold;
@@ -219,18 +219,16 @@
   top: -3rem;
   right: -3rem;
   cursor: pointer;
+}
 
-  svg {
-    fill: var(--greenD1);
-    stroke: var(--greenD1);
-  }
+.modalClose_btn svg {
+  fill: var(--greenD1);
+  stroke: var(--greenD1);
+}
 
-  &:hover {
-    svg {
-      fill: var(--greenC1);
-      stroke: var(--greenC1);
-    }
-  }
+.modalClose_btn:hover svg {
+  fill: var(--greenC1);
+  stroke: var(--greenC1);
 }
 
 .button_close {

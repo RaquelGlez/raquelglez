@@ -1,28 +1,66 @@
+"use client";
+import styles from "../styles/home.module.css";
+import { useState } from "react";
+import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
 import Work from "@/components/work/Work";
+import { rubik } from "@/styles/fonts";
 import Image from "next/image";
 
 export default function Home() {
+  const [activeBtn, setActiveBtn] = useState(false);
+
   return (
-    <div className="">
-      <main className="flex flex-col">
-        <h1>Raquel González</h1>
-        <h3>FrontEnd Developer</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          tenetur nulla, accusamus maiores dolorem, perspiciatis voluptate sequi
-          explicabo ut praesentium eos doloremque deserunt quisquam illo vel
-          cum. Maiores, vel voluptates!
-        </p>
-        <br />
-        <br />
-        <br />
+    <div className="relative">
+      <nav
+        className={`${styles.navbar} ${activeBtn ? `${styles.active}` : ""}`}
+      >
+        <div className={`${styles.navMain}`}>
+          <button
+            className={`${styles.menu_btn} ${
+              activeBtn ? `${styles.active}` : ""
+            }`}
+            onClick={() => setActiveBtn(!activeBtn)}
+            aria-label="close-open menu"
+          >
+            <div className={`${styles.menu_icon}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+          <a href="#about">Sobre mi</a>
+          <a href="#work">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </div>
+      </nav>
+
+      <main className={` flex flex-col ${styles.mainContainer}`}>
+        <Image
+          src="/img/drop_water.png"
+          alt="imagen de proyecto"
+          fill
+          priority
+        />
+        <section className={`${styles.intro}  ${rubik.className} `}>
+          <h1 className={`text-center ${styles.animation1}`} id="title">
+            Raquel González
+          </h1>
+          <h2 className={`text-center ${styles.animation2} `}>
+            FrontEnd Developer
+          </h2>
+        </section>
       </main>
-      <br />
-      <br />
-      <div className="w-full h-1 bg-slate-600"></div>
-      <Work />
-      <Contact />
+      <section id="about">
+        <About />
+      </section>
+      <section id="work">
+        <Work />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }

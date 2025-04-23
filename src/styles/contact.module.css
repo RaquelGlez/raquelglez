@@ -114,12 +114,12 @@
   padding: 1rem 3rem;
   text-transform: uppercase;
   transition: all 0.15s linear;
+}
 
-  &:hover {
-    background-color: var(--greenD2);
-    border-color: var(--greenD2);
-    color: var(--greenC3);
-  }
+.button_form:hover {
+  background-color: var(--greenD2);
+  border-color: var(--greenD2);
+  color: var(--greenC3);
 }
 
 .contactLink {
@@ -158,10 +158,10 @@
   align-items: center;
   color: var(--greenD2);
   background-color: var(--greenC3);
+}
 
-  p {
-    color: var(--greenD1);
-  }
+.mainModal p {
+  color: var(--greenD1);
 }
 
 .modal_msgError {
@@ -173,18 +173,16 @@
   top: 1.25rem;
   right: 1.25rem;
   cursor: pointer;
+}
 
-  svg {
-    fill: var(--greenD1);
-    stroke: var(--greenD1);
-  }
+.modalClose_btn svg {
+  fill: var(--greenD1);
+  stroke: var(--greenD1);
+}
 
-  &:hover {
-    svg {
-      fill: var(--greenC1);
-      stroke: var(--greenC1);
-    }
-  }
+.modalClose_btn:hover svg {
+  fill: var(--greenC1);
+  stroke: var(--greenC1);
 }
 
 @media (max-width: 475) {

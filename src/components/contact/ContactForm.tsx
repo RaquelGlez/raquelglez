@@ -41,11 +41,11 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     sendEmail(data)
-      .then((res) => {
+      .then(() => {
         setSuccessEmail(true);
         onOpen();
       })
-      .catch((err) => {
+      .catch(() => {
         setErrorEmail(true);
         onOpen();
       });
@@ -58,7 +58,7 @@ const ContactForm = () => {
       setSuccessEmail(false);
       setErrorEmail(false);
     }
-  }, [formState, reset]);
+  }, [formState, reset, isSubmitSuccessful]);
 
   return (
     <div className={`w-3/4 md:w-3/5 md:m-8 m-16 ${styles.formContainer}`}>

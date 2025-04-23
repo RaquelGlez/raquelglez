@@ -5,20 +5,13 @@ import Project from "./Project";
 import ProjectDetail from "./ProjectDetail.tsx";
 import { projects } from "@/utils/helperData";
 
-interface WorkProps {
-  activeItem: boolean;
-  setActiveItem: (id: boolean) => void;
-  idActiveItem: string;
-  setIdActiveItem: (text: string) => void;
-}
-
 const Work = () => {
   const [activeItem, setActiveItem] = useState(false);
   const [idActiveItem, setIdActiveItem] = useState("");
 
   return (
     <div className={`overflow-hidden ${styles.containerSectionWorks}`}>
-      <h2 className="font-semibold text-current mb-12 text-xl text-center">
+      <h2 className="font-semibold text-current mb-12 text-3xl text-center">
         PROYECTOS
       </h2>
 

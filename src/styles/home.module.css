@@ -1,0 +1,234 @@
+.navbar {
+  background-color: #041100;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navMain {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  width: auto;
+}
+
+.navMain a {
+  color: var(--greenC3);
+  padding: 0.5rem 1.2rem;
+  font-size: 1.1rem;
+  background: linear-gradient(165deg, var(--greenD1), var(--greenD2));
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089),
+    inset 20px -20px 22px rgba(255, 255, 255, 0.4);
+  transition: 0.6s ease all;
+}
+
+.navMain a:first-of-type {
+  border-radius: 61% 39% 23% 77% / 32% 30% 70% 68%;
+}
+.navMain a:nth-of-type(2) {
+  border-radius: 69% 31% 23% 77% / 61% 62% 38% 39%;
+}
+.navMain a:nth-of-type(3) {
+  border-radius: 43% 57% 71% 29% / 34% 33% 67% 66%;
+}
+
+.navMain:hover a {
+  filter: blur(5px);
+  opacity: 0.2;
+}
+
+.navMain a:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: blur(0);
+  background: linear-gradient(165deg, #171717, var(--greenD1));
+}
+
+.menu_btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.menu_icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 12;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_icon span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #f1eded;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu_icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu_icon span:nth-child(2) {
+  top: 0.5rem;
+}
+
+.menu_icon span:nth-child(3) {
+  top: 1rem;
+}
+
+.menu_btn.active .menu_icon span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu_btn.active .menu_icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu_btn.active .menu_icon span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+.mainContainer {
+  background-color: #041100;
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  border-radius: 0% 0% 37% 46% / 0% 0% 33% 18%;
+  margin-bottom: 7rem;
+
+  view-timeline: --scroll;
+}
+
+.mainContainer img {
+  border-radius: 15% 85% 22% 78% / 72% 72% 28% 28%;
+  object-fit: cover;
+}
+
+.mainContainer img::after {
+  background: inherit;
+  position: absolute;
+  content: "";
+  filter: blur(25px) saturate(1.5);
+  width: 100%;
+  height: 100%;
+  scale: 1.05;
+  z-index: -1;
+}
+
+.intro {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(245, 247, 249);
+  color: var(--greenC3);
+  font-style: italic;
+  font-size: 6rem;
+  margin-top: 4rem;
+  row-gap: 2rem;
+}
+
+.animation1 {
+  view-timeline: --scroll block;
+  animation-timeline: --scroll;
+  animation-name: fade-away, scale-down;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-duration: 1ms;
+}
+.animation2 {
+  view-timeline: --scroll block;
+  animation-timeline: --scroll;
+  animation-name: scale-up, fade-away;
+  animation-fill-mode: both;
+  animation-duration: 1ms;
+}
+
+@keyframes scale-up {
+  to {
+    scale: 1.2;
+  }
+}
+@keyframes scale-down {
+  to {
+    scale: 0.8;
+  }
+}
+@keyframes fade-away {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 859) {
+  .navbar {
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .menu_btn {
+    display: flex;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar.active a {
+    display: flex;
+  }
+
+  .mainContainer img {
+    padding-top: 5rem;
+  }
+
+  .intro {
+    font-size: 4rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 575) {
+  .mainContainer {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .intro {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .intro h1,
+  .intro h2 {
+    width: 80%;
+  }
+}
