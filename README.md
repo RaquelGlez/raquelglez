@@ -23,7 +23,7 @@ Este sitio fue construido con **Next.js 15**, aprovechando las últimas funciona
 
 | Tecnología             | Uso principal                         |
 | ---------------------- | ------------------------------------- |
-| **Next.js 14**         | Framework base (SSR / App Router)     |
+| **Next.js 15**         | Framework base (SSR / App Router)     |
 | **Tailwind CSS**       | Estilos y diseño responsivo           |
 | **JavaScript / React** | Lógica de componentes                 |
 | **Vercel**             | Despliegue en la nube                 |
@@ -70,8 +70,8 @@ Estoy construyendo este portafolio con una visión **multidisciplinaria**, que a
 | Frontend        | Next.js · React · Tailwind · D3.js      |
 | Backend         | Node.js · Express · Python (FastAPI)    |
 | Data            | Pandas · NumPy · Seaborn · Plotly       |
-| Notebooks       | Jupyter · Streamlit · Google Colab      |
-| Visualización   | Chart.js · Recharts · Dash · Matplotlib |
+| Notebooks       | Jupyter · Google Colab · Streamlit      |
+| Visualización   | Matplotlib · Chart.js · Recharts · Dash |
 | Infraestructura | Vercel · Render · GitHub Actions        |
 
 ---
@@ -83,7 +83,7 @@ Estoy construyendo este portafolio con una visión **multidisciplinaria**, que a
 - 📧 Email: [gonzalez.c.raquel@gmail.com](mailto:gonzalez.c.raquel@gmail.com)
 - 💼 LinkedIn: [www.linkedin.com/in/raquelglezc/](#)
 - 🧑‍💻 GitHub: [github.com/RaquelGlez](#)
-- 🌍 Portafolio: [https://tu-usuario.vercel.app](https://tu-usuario.vercel.app)
+- 🌍 Portafolio: [https://raquelglez.vercel.app](https://raquelglez.vercel.app)
 
 ---
 
