@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">🌐 Portafolio de Desarrollador de Raquel González</h1>
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/stack-Full%20Stack-blueviolet" />
+  <img src="https://img.shields.io/badge/framework-Next.js-000?logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/deploy-Vercel-black?logo=vercel" />
+  <img src="https://img.shields.io/badge/focus-Frontend%20%26%20Data-blue" />
+  <img src="https://img.shields.io/badge/status-En%20desarrollo-orange" />
+</p>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 Sobre mí
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+¡Hola! Soy un **desarrollador Full Stack** con una creciente pasión por los datos 📊
+Actualmente, mi portafolio se centra en proyectos de **frontend**, pero estoy expandiéndolo para incluir desarrollos backend y trabajos enfocados en **ciencia de datos**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este sitio fue construido con **Next.js 15**, aprovechando las últimas funcionalidades como **App Router**, **Server Actions** y desplegado en **Vercel** 🚀
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tecnologías utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+| Tecnología             | Uso principal                         |
+| ---------------------- | ------------------------------------- |
+| **Next.js 14**         | Framework base (SSR / App Router)     |
+| **Tailwind CSS**       | Estilos y diseño responsivo           |
+| **JavaScript / React** | Lógica de componentes                 |
+| **Vercel**             | Despliegue en la nube                 |
+| **Server Actions**     | Funcionalidades del lado del servidor |
+| **API externa**        | Envío de correos desde el formulario  |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Objetivo del proyecto
 
-## Deploy on Vercel
+✅ Tener una presencia online profesional
+✅ Mostrar mis habilidades técnicas y proyectos reales
+✅ Facilitar el contacto con empleadores o clientes
+✅ Dejar la base lista para futuras ampliaciones: backend y proyectos de ciencia de datos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ Características principales
+
+- 🌐 Diseño **responsive** y accesible
+- 📬 Formulario de contacto funcional con **envío de correos**
+- 🧩 Proyectos destacados con stack tecnológico usado
+- ⚙️ Server Actions para lógica del lado del servidor
+- 🧱 Estructura lista para escalar
+
+---
+
+## 🧭 Expansión futura del portafolio
+
+Estoy construyendo este portafolio con una visión **multidisciplinaria**, que abarque tanto el desarrollo web como la ciencia de datos.
+
+### 🔄 Por venir:
+
+- 📊 **Análisis exploratorios** sobre datasets reales
+- 🧼 Limpieza, transformación y visualización de datos
+- 🔌 Backend para APIs de datos y visualización (Node.js, FastAPI), etc
+
+---
+
+## 🧰 Herramientas previstas
+
+| Área            | Tecnologías previstas                   |
+| --------------- | --------------------------------------- |
+| Frontend        | Next.js · React · Tailwind · D3.js      |
+| Backend         | Node.js · Express · Python (FastAPI)    |
+| Data            | Pandas · NumPy · Seaborn · Plotly       |
+| Notebooks       | Jupyter · Streamlit · Google Colab      |
+| Visualización   | Chart.js · Recharts · Dash · Matplotlib |
+| Infraestructura | Vercel · Render · GitHub Actions        |
+
+---
+
+## 📬 Contacto
+
+¿Te gustaría conectar conmigo? Puedes encontrarme en:
+
+- 📧 Email: [gonzalez.c.raquel@gmail.com](mailto:gonzalez.c.raquel@gmail.com)
+- 💼 LinkedIn: [www.linkedin.com/in/raquelglezc/](#)
+- 🧑‍💻 GitHub: [github.com/RaquelGlez](#)
+- 🌍 Portafolio: [https://tu-usuario.vercel.app](https://tu-usuario.vercel.app)
+
+---
+
+<p align="center">
+  Hecho con ❤️ por <strong>Raquel</strong> – ¡Gracias por visitar!
+</p>
